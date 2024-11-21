@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F9F9FA;
+            font-size: 14px; 
+
+        }
+        form{
+            padding: 45px;
+            padding-right: 45px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            background-color:#fafafa;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-color:#07ad90;
+            border-width: 5px;
+            
+        }
+        input{
+            width: 100%;
+            border: none;
+            background: transparent;
+            line-height: 2em;
+            border-bottom: 3px solid #07ad90;
+            color: #666;
+        }
+
+        button{
+            height: 25px;
+            width: 100px;
+            cursor: pointer;
+            background-color:#07ad90;
+            color:#F9F9FA;
+        }
+        h1 {
+            color: #07ad90;
+            text-decoration: overline;
+            margin: 12px;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        label{
+            color: #07ad90;
+        }
+        .submit{
+            border: 3px solid #07ad90;
+            color: #07ad90;
+            width: 100px;
+        }
+        .submit:hover{
+            background-color: #07ad90;
+            color: #ffffff;
+        }
+        a{
+            text-decoration: none;
+            color: #07ad90;
+        }
+        a:visited{
+            color: #000dc1;
+        }
+    </style>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="/submit">
+        <label for="uname">Username: </label>
+        <input type="text" name="uname" id="uname" placeholder="username">
+
+        <br>
+        <br>
+
+        <label for="pass">password: </label>
+        <input type="password" name="pass" id="pass" placeholder="********">
+        <br>
+        <br>
+        <input class="submit" type="submit">
+        <br>
+        <p>Don't have an account? <a href="#">sign up here</a></p>
+        <br>
+        <a href="./docs/info.txt">check previous information</a>
+    </form>
+</body>
+</html>
